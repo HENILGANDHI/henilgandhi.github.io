@@ -298,10 +298,48 @@ footer p {
 }
 
 /* Responsive Design */
+/* Keep everything you already have up to your current @media query */
+
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .hero-container {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
+    }
+
+    .hero-left img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .hero-right h2 {
+        font-size: 2rem;
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+        padding: 0 10px;
     }
 
     .skills-container,
@@ -309,7 +347,66 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .projects-row,
+    .projects-center,
+    .writeups-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .blog-post {
-        width: 100%;
+        width: 90%;
+    }
+
+    .section-header {
+        font-size: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-header::before,
+    .section-header::after {
+        display: none;
+    }
+
+    #about p,
+    #skills p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-icons img {
+        width: 32px;
+        height: 32px;
     }
 }
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-right p {
+        font-size: 0.95rem;
+    }
+
+    .blog-post h3 {
+        font-size: 1.1rem;
+    }
+
+    .blog-post p {
+        font-size: 0.9rem;
+    }
+}
+
