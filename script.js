@@ -22,6 +22,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+//Mobile responsive
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+
 // Animate elements when they come into view
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
