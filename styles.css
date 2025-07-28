@@ -388,28 +388,6 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
-    nav h1 {
-        font-size: 1.2rem;
-    }
-
-    .hero-right h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-right p {
-        font-size: 0.95rem;
-    }
-
-    .blog-post h3 {
-        font-size: 1.1rem;
-    }
-
-    .blog-post p {
-        font-size: 0.9rem;
-    }
-}
-
 /* Hamburger Styles */
 .hamburger {
   display: none;
@@ -428,13 +406,14 @@ footer p {
 /* Mobile Navigation */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .hamburger {
+  .logo-container {
     display: flex;
-    margin-left: auto;
+    align-items: center;
   }
 
   .nav-links {
@@ -455,6 +434,76 @@ footer p {
   .nav-links li {
     margin: 10px 0;
   }
-}
 
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-left img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .hero-right h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-right p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .skills-container,
+  .honors-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-row,
+  .projects-center,
+  .writeups-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-post {
+    width: 90%;
+  }
+
+  .section-header {
+    font-size: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-header::before,
+  .section-header::after {
+    display: none;
+  }
+
+  #about p,
+  #skills p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
