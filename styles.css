@@ -99,7 +99,7 @@ footer,
 }
 
 /* Toggle Dark Mode Button */
-/* #theme-toggle {
+#theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1.5rem;
@@ -115,7 +115,7 @@ footer,
 #theme-toggle:hover {
   transform: scale(1.2);
   color: var(--primary-color);
-} */
+}
 
 /* Navbar */
 .terminal-nav {
