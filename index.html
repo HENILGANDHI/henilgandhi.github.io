@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Henil Gandhi's Cybersecurity Portfolio - Projects, Research, Skills, and Writeups in Penetration Testing, Forensics, and Security.">
+  <meta name="description"
+    content="Henil Gandhi's Cybersecurity Portfolio - Projects, Research, Skills, and Writeups in Penetration Testing, Forensics, and Security.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Henil Gandhi | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
@@ -11,15 +13,14 @@
 </head>
 
 
-<body>
+<body class="dark-mode">
 
   <!-- Navbar -->
   <nav class="terminal-nav">
     <div class="logo-container">
       <img src="images/logo.png" alt="HG Logo" class="logo">
-      <h1>Henil Gandhi</h1>
     </div>
-    
+
     <div class="hamburger" onclick="toggleMenu()">
       <div></div>
       <div></div>
@@ -27,31 +28,37 @@
     </div>
 
     <div class="nav-links">
-    <ul class="terminal-menu">
-      <li><a href="#home"><span class="prompt">></span> Home</a></li>
-      <li><a href="#about"><span class="prompt">></span> About</a></li>
-      <li><a href="#skills"><span class="prompt">></span> Skills</a></li>
-      <li><a href="#research-paper"><span class="prompt">></span> Research</a></li>
-      <li><a href="#projects"><span class="prompt">></span> Project</a></li>
-      <li><a href="#honors"><span class="prompt">></span> Honors</a></li>
-      <li><a href="#writeups"><span class="prompt">></span> Writeups</a></li>
-      <li><a href="#contact"><span class="prompt">></span> Contact</a></li>
-    </ul>
-    </div>  
+      <ul class="terminal-menu">
+        <li><a href="#home"><span class="prompt">></span> Home</a></li>
+        <li><a href="#about"><span class="prompt">></span> About</a></li>
+        <li><a href="#skills"><span class="prompt">></span> Skills</a></li>
+        <li><a href="#projects-papers"><span class="prompt">></span> Project & Papers</a></li>
+        <li><a href="#certifications"><span class="prompt">></span> Certifications</a></li>
+        <li><a href="#honors"><span class="prompt">></span> Honors</a></li>
+        <li><a href="#writeups"><span class="prompt">></span> Blog</a></li>
+        <li><a href="#contact"><span class="prompt">></span> Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
+  <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+
+
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-left">
-        <img src="images/profile.jpg" alt="Henil's Photo" class="hero-img">
-      </div>
-      <div class="hero-right">
-      <h2 id="dynamic-title" class="typing"></h2>
-        <p>I’m driven by curiosity, committed to security, and passionate about ethical hacking. From exploiting vulnerabilities to building secure systems, I navigate the digital battlefield with a hacker mindset and a defender’s heart. Whether it's analyzing bugs, participating in CTFs, or securing APIs, I thrive on challenges that push the boundaries of modern cybersecurity.</p>
+<section id="home">
+  <div class="hero-container">
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Profile" class="hero-img" />
+      <h1 class="hero-name">Hello, I'm Henil Gandhi.</h1>
+      <h2 id="static-title"> Cybersecurity Engineer | Ethical Hacker | Risk Management</h2>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Get in Touch</a>
+        <a href="https://drive.google.com/file/d/1_h6UH7y3xTduy-28pf2sfvT62__whtc2/view?usp=drive_link" class="btn secondary-btn" target="_blank">Resume</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- About Section -->
 
@@ -73,148 +80,176 @@
 
 
   <!-- Skills Section -->
-  <section id="skills">
+  <<section id="skills">
     <h2 class="section-header">Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <p>Ethical Hacking</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 85%;"></div>
-        </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Core</h3>
+        <ul>
+          <li>Ethical Hacking</li>
+          <li>VAPT</li>
+          <li>Web Application Security</li>
+          <li>API Security</li>
+          <li>Android Security</li>
+          <li>Risk Management</li>
+          <li>GRC</li>
+          <li>Owasp Top 10</li>
+          <li>NIST</li>
+          <li>ISO 27001</li>
+          <li>SOC Analysis</li>
+
+        </ul>
       </div>
-      <div class="skill">
-        <p>Web Application Security</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 100%;"></div>
-        </div>
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Shell Scripting</li>
+          <li>C/C++</li>
+        </ul>
       </div>
-      <div class="skill">
-        <p>API Security</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 80%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>Security Tools - Burp Suite, Nmap, Metasploit, Wireshark & Other</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 95%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>Shell Scripting</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 90%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>Python</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 80%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>SIEM Tools</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 75%;"></div>
-        </div>
+      <div class="skill-card">
+        <h3>Tools & Frameworks</h3>
+        <ul>
+          <li>Burp Suite</li>
+          <li>Nmap</li>
+          <li>Metasploit</li>
+          <li>Splunk</li>
+          <li>Wireshark</li>
+          <li>SIEM Tools</li>
+          <li>Power BI</li>
+          <li>GitHub</li>
+          <li>IDS/IP</li>
+          <li>Microsoft Office Suite</li>
+          <li></li>
+        </ul>
       </div>
     </div>
-  </section>
+    </section>
 
-  <!-- Research Paper Section -->
-  <section id="research-paper">
-    <h2 class="section-header">Research Papers</h2>
-    <div class="projects-row">
-      <div class="blog-post">
-        <img src="images/forensics.jpg" alt="Research Paper">
-        <h3>Understanding File System Forensics</h3>
-        <p>Co-authored a research paper published in Digital Forensics in the Age of AI.</p>
-        <a href="https://www.igi-global.com/gateway/chapter/367315" target="_blank" rel="noopener noreferrer">Read the Paper </a>
-      </div>
+    <!-- Projects & Papers Section -->
+    <section id="projects-papers">
+      <h2 class="section-header">Projects & Papers</h2>
+      <div class="card-grid">
+        <!-- Research Paper 1 -->
+        <div class="card">
+          <img src="images/forensics.jpg" alt="Research Paper">
+          <h3>Understanding File System Forensics</h3>
+          <p>Co-authored a paper in <i>Digital Forensics in the Age of AI</i>.</p>
+          <a href="https://www.igi-global.com/gateway/chapter/367315" target="_blank">Read the Paper</a>
+        </div>
 
-      <div class="blog-post">
-        <img src="images/Web Application Security.png" alt="Research Paper" class="project-img">
-        <h3>Web-Application Security into the Era of Web 2.0</h3>
-        <p>Published a Research paper for beginner's to learn about web application vulnerabilities</p>
-        <a href="https://www.ijser.in/archives/v11i7/SE23725232857.pdf" target="_blank" rel="noopener noreferrer">Read the Paper</a>
+        <!-- Project -->
+        <div class="card">
+          <img src="images/cyberhunt.png" alt="CyberHunt Project">
+          <h3>CyberHunt</h3>
+          <p>Penetration testing project with vuln assessments & exploitation.</p>
+          <a href="https://github.com/HENILGANDHI/CyberHunt" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- Research Paper 2 -->
+        <div class="card">
+          <img src="images/Web Application Security.png" alt="Web App Security">
+          <h3>Web App Security in Web 2.0</h3>
+          <p>Beginner-friendly research paper on web app vulnerabilities.</p>
+          <a href="https://www.ijser.in/archives/v11i7/SE23725232857.pdf" target="_blank">Read the Paper</a>
+        </div>
       </div>
+    </section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+  <h2 class="section-header">Certifications</h2>
+  <div class="certification-grid">
+    <div class="cert-card">
+      <img src="images/comptia.png" alt="CompTIA Security+">
+      <h3>CompTIA Security+</h3>
+      <p>Aug 2025</p>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2 class="section-header">Project</h2>
-    <div class="projects-center">
-      <div class="blog-post">
-        <img src="images/cyberhunt.png" alt="CyberHunt">
-        <h3>CyberHunt</h3>
-        <p>A penetration testing project involving vulnerability assessments, exploitation, and reporting.</p>
-        <a href="https://github.com/HENILGANDHI/CyberHunt" target="_blank">View on GitHub</a>
-      </div>
+    <div class="cert-card">
+      <img src="images/secops.png" alt="Certified Appsec Practitioner - Secops Group">
+      <h3>Certified Appsec Practitioner - Secops Group</h3>
+      <p>Jan 2024</p>
     </div>
-  </section>
-
-  <!-- Honors & Achievements Section -->
-  <!-- In your HTML -->
-  <section id="honors">
-    <h2 class="section-header">Honors & Achievements</h2>
-    <div class="honors-container">
-      <div class="honor">
-        <h3>Microsoft Hall of Fame</h3>
-        <p>MAY 2024</p>
-      </div>
-      <div class="honor">
-        <h3>Apple Hall of Fame</h3>
-        <p>DEC 2022</p>
-      </div>
-      <div class="honor">
-        <h3>Acknowledgement by Indian Government</h3>
-        <p>NOV 2022</p>
-      </div>
-      <div class="honor">
-        <h3>Certificate of Appreciation from Lenovo</h3>
-        <p>OCT 2022</p>
-      </div>
-      <div class="honor">
-        <h3>Letter of Appreciation from Lenovo</h3>
-        <p>OCT 2022</p>
-      </div>
-      <div class="honor">
-        <h3>Winner of IISF CTF Competition</h3>
-        <p>MAR 2022</p>
-      </div>
+    <div class="cert-card">
+      <img src="images/ibm.png" alt="IBM Cyber Security Analyst">
+      <h3>IBM Cyber Security Analyst</h3>
+      <p>Mar 2022</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Add this new section before the Contact section -->
-  <section id="writeups">
-    <h2 class="section-header">Medium Writeups</h2>
-    <div class="writeups-container">
-      <div class="blog-post">
-        <img src="images/writeup.png" alt="Writeup Preview" class="project-img">
-        <h3>From Rejections to Accomplishment: Landing My First Cybersecurity Internship in USA</h3>
-        <p> <a href="https://medium.com/@hsghacking/from-rejections-to-results-landing-my-first-cybersecurity-internship-in-usa-285eea628a9a" target="_blank">Read on Medium</a></p>
+<!-- Honors & Achievements Section -->
+<section id="honors">
+  <h2 class="section-header">Honors & Achievements</h2>
+  <div class="cert-grid">
+    <div class="cert-card-hof">
+      <img src="images/msrc.jpg" alt="Microsoft Hall of Fame">
+      <h3>Microsoft Hall of Fame</h3>
+      <p>May 2024</p>
+    </div>
+    <div class="cert-card-hof">
+      <img src="images/apple.jpg" alt="Apple Hall of Fame">
+      <h3>Apple Hall of Fame</h3>
+      <p>Dec 2022</p>
+    </div>
+    <div class="cert-card-hof">
+      <img src="images/nciipc.jpeg" alt="Acknowledgement by Indian Government">
+      <h3>Acknowledgement by Indian Government</h3>
+      <p>Nov 2022</p>
+    </div>
+    <div class="cert-card-hof">
+      <img src="images/lenovo.png" alt="Certificate of Appreciation from Lenovo">
+      <h3>Certificate of Appreciation from Lenovo</h3>
+      <p>Oct 2022</p>
+    </div>
+    <div class="cert-card-hof">
+      <img src="images/lg.png" alt="Letter of Appreciation from LG">
+      <h3>Letter of Appreciation from LG</h3>
+      <p>Oct 2022</p>
+    </div>
+    <div class="cert-card-hof">
+      <img src="images/iisf.jpeg" alt="Winner of IISF CTF Competition">
+      <h3>Winner of IISF CTF Competition</h3>
+      <p>Mar 2022</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Medium Writeups Section -->
+    <section id="writeups">
+      <h2 class="section-header">Blog</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/writeup.png" alt="Writeup Preview">
+          <h3>Landing My First Cybersecurity Internship in USA</h3>
+          <p><a
+              href="https://medium.com/@hsghacking/from-rejections-to-results-landing-my-first-cybersecurity-internship-in-usa-285eea628a9a"
+              target="_blank">Read on Medium</a></p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2 class="section-header">Contact Me</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/henilgandhi08"><img src="logo/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://x.com/fantasticHENIL" target="_blank"><img src="logo/twitter.png" alt="Twitter"></a>
-      <a href="https://www.instagram.com/harry_0.0.8/" target="_blank"><img src="logo/instagram.png" alt="Instagram"></a>
-      <a href="mailto:hsghenil@gmail.com"><img src="logo/email.png" alt="Email"></a>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-header">Contact Me</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/henilgandhi08"><img src="logo/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://x.com/fantasticHENIL" target="_blank"><img src="logo/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/harry_0.0.8/" target="_blank"><img src="logo/instagram.png"
+            alt="Instagram"></a>
+        <a href="mailto:hsghenil@gmail.com"><img src="logo/email.png" alt="Email"></a>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Henil Gandhi | All Rights Reserved</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Henil Gandhi | All Rights Reserved</p>
+    </footer>
 
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
