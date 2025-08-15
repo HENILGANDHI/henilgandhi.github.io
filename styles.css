@@ -758,7 +758,7 @@ body.no-js section {
   #theme-toggle {
     top: 0.5rem;
     right: 0.5rem; /* Move it leftward so it doesn’t clash with hamburger */
-    font-size: 2rem; /* Slightly smaller for small screens */
+    font-size: 1.25rem; /* Slightly smaller for small screens */
   }
 }
 
@@ -768,4 +768,5 @@ body.no-js section {
     height: 250px;
   }
 }
+
 
