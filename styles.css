@@ -642,13 +642,14 @@ body.no-js section {
 /* Responsive */
 @media (max-width: 768px) {
   .terminal-menu {
-    position: absolute;
-    top: 60px; /* just below navbar */
+    position: fixed;
+    /* top: 60px; just below navbar */
     left: 0rem; /* aligns with hamburger icon */
     background: var(--bg-blur);
     backdrop-filter: blur(12px);
-    border-radius: 10px;
-    padding: 1rem 1.2rem;
+    -webkit-backdrop-filter: blur(12px);  /*for safari &*/
+    border-radius: 1px;
+    padding: 0.5rem 1rem;
     width: 100%;
     display: none;
     flex-direction: column;
@@ -692,9 +693,9 @@ body.no-js section {
     top: 60px;
     left: 0rem;
     width: 100%;
-    background: #1f2937;
-    padding: 1rem;
-    border-radius: 10px;
+    background: var(--bg-blur);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
     box-shadow: 0 4px 15px var(--shadow);
     display: none;
     flex-direction: column;
@@ -768,7 +769,3 @@ body.no-js section {
     height: 250px;
   }
 }
-
-
-
-
