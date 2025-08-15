@@ -762,4 +762,10 @@ body.no-js section {
   }
 }
 
+@media (max-width: 500px) {
+  .hero-img {
+    width: 250px; /* or whatever size you prefer */
+    height: 250px;
+  }
+}
 
