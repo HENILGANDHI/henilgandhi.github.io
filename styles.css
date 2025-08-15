@@ -753,3 +753,12 @@ body.no-js section {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 768px) {
+  #theme-toggle {
+    top: 1rem;
+    right: 4.5rem; /* Move it leftward so it doesn’t clash with hamburger */
+    font-size: 1.5rem; /* Slightly smaller for small screens */
+  }
+}
+
