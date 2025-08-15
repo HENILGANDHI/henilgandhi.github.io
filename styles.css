@@ -692,7 +692,7 @@ body.no-js section {
     top: 60px;
     left: 0rem;
     width: 100%;
-    background: var(--bg-blur);
+    background: #1f2937;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px var(--shadow);
@@ -768,6 +768,7 @@ body.no-js section {
     height: 250px;
   }
 }
+
 
 
 
