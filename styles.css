@@ -643,8 +643,8 @@ body.no-js section {
 @media (max-width: 768px) {
   .terminal-menu {
     position: absolute;
-    top: 70px; /* just below navbar */
-    right: 1.5rem; /* aligns with hamburger icon */
+    top: 50px; /* just below navbar */
+    left: 1rem; /* aligns with hamburger icon */
     background: var(--bg-blur);
     backdrop-filter: blur(12px);
     border-radius: 10px;
@@ -689,9 +689,9 @@ body.no-js section {
 
   .nav-links {
     position: absolute;
-    top: 70px;
-    right: 1rem;
-    width: max-content;
+    top: 50px;
+    left: 1rem;
+    width: 200px;
     background: var(--bg-blur);
     padding: 1rem;
     border-radius: 10px;
@@ -768,6 +768,3 @@ body.no-js section {
     height: 250px;
   }
 }
-
-
-
