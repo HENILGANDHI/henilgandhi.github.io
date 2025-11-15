@@ -438,9 +438,9 @@ footer,
   justify-content: center;
 }
 
-#writeups .card-grid {
+/* #writeups .card-grid {
   max-width: 350px;
-}
+} */
 
 /* Universal Card Style */
 .card {
@@ -802,3 +802,4 @@ body.no-js section {
     min-height: 280px;
   }
 }
+
